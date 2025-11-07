@@ -2,6 +2,7 @@
 
 A simple yet stylish calculator built with **Rust** and **Slint** UI toolkit.  
 This project demonstrates how to combine **Rust’s logic layer** with **modern declarative UI** design using Slint.
+
 🖼️ Screenshot
 Here’s what the final app looks like:
 
