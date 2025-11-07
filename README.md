@@ -44,25 +44,13 @@ for example, when a Slint button is clicked, it triggers a Rust function that up
 
 🖼️ Screenshot
 Here’s what the final app looks like:
+<img width="415" height="641" alt="image" src="https://github.com/user-attachments/assets/9a566314-63b3-4229-a1fc-c6b649463a56" />
 
 
-📸 Tip: You can take a screenshot of your running app and save it as:*
-simple_calculator/docs/screenshot.png
-GitHub will automatically render it in the README.
 
-💡 Bonus Features (Future Ideas)
-Operator precedence (full expression parsing)
-
-Calculation history with clickable entries
-
-Memory buttons: MC / MR / M+ / M−
-
-Keyboard input support
-
-Light/Dark theme toggle 🌗
 
 🧑‍💻 Author
-Đoàn Tiến Trung
+Đoàn Tiên Trung
 Built with ❤️ using Rust + Slint
 
 📜 License
