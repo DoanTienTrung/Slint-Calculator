@@ -4,7 +4,9 @@ A simple yet stylish calculator built with **Rust** and **Slint** UI toolkit.
 This project demonstrates how to combine **Rust’s logic layer** with **modern declarative UI** design using Slint.
 🖼️ Screenshot
 Here’s what the final app looks like:
+
 <img width="415" height="641" alt="image" src="https://github.com/user-attachments/assets/9a566314-63b3-4229-a1fc-c6b649463a56" />
+
 
 ---
 
