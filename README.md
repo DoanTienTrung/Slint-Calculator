@@ -59,14 +59,3 @@ yaml
 Copy code
 
 ---
-
-
-### ✅ Gợi ý thêm
-Sau khi bạn chạy ứng dụng và chụp ảnh màn hình:
-1. Tạo thư mục `docs/`
-2. Lưu hình vào `docs/screenshot.png`
-3. Commit lại:
-   ```bash
-   git add docs/screenshot.png README.md
-   git commit -m "Add README and screenshot"
-   git push
