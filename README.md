@@ -42,13 +42,6 @@ calc.rs contains the calculator logic: operations, error handling, etc.
 The connection between UI and Rust uses callbacks and properties —
 for example, when a Slint button is clicked, it triggers a Rust function that updates the display.
 
-🖼️ Screenshot
-Here’s what the final app looks like:
-<img width="415" height="641" alt="image" src="https://github.com/user-attachments/assets/9a566314-63b3-4229-a1fc-c6b649463a56" />
-
-
-
-
 🧑‍💻 Author
 Đoàn Tiên Trung
 Built with ❤️ using Rust + Slint
@@ -60,6 +53,10 @@ yaml
 Copy code
 
 ---
+🖼️ Screenshot
+Here’s what the final app looks like:
+<img width="415" height="641" alt="image" src="https://github.com/user-attachments/assets/9a566314-63b3-4229-a1fc-c6b649463a56" />
+
 
 ### ✅ Gợi ý thêm
 Sau khi bạn chạy ứng dụng và chụp ảnh màn hình:
