@@ -39,11 +39,11 @@ simple_calculator/
 ├── Cargo.toml         # Rust project manifest
 └── README.md
 🧩 How it works
-ui.slint defines the visual layout (buttons, display, colors, etc.).
+ui.slint: defines the visual layout (buttons, display, colors, etc.).
 
-main.rs loads that UI and binds button events to Rust functions.
+main.rs: loads that UI and binds button events to Rust functions.
 
-calc.rs contains the calculator logic: operations, error handling, etc.
+calc.rs: contains the calculator logic: operations, error handling, etc.
 
 The connection between UI and Rust uses callbacks and properties —
 for example, when a Slint button is clicked, it triggers a Rust function that updates the display.
