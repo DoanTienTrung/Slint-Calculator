@@ -35,8 +35,8 @@ export component Calculator inherits Window {
     height: 600px;
     title: "Simple Calculator";
 
-    in-out property <string> display: "0";
-    callback button_pressed(string);
+    in-out property <string> display: "0"; // bien poperty 
+    callback button_pressed(string); 
 
     Rectangle {
         width: 100%;
@@ -47,7 +47,7 @@ export component Calculator inherits Window {
             spacing: 10px;
             padding: 12px;
 
-            // Màn hình hiển thị
+           
             Rectangle {
                 height: 100px;
                 background: white;
@@ -66,12 +66,12 @@ export component Calculator inherits Window {
                 }
             }
 
-            // ✅ Dùng GridLayout để chứa các Row
+           
             GridLayout {
                 spacing: 8px;
                 vertical-stretch: 1;
 
-                // Hàng 1
+                
                 Row {
                     ColorButton { label: "C"; bg: #f44336; fg: white; on_click => root.button_pressed("C"); }
                     ColorButton { label: "⌫"; bg: #ff9800; fg: white; on_click => root.button_pressed("⌫"); }
@@ -79,7 +79,7 @@ export component Calculator inherits Window {
                     ColorButton { label: "%"; bg: #9c27b0; fg: white; on_click => root.button_pressed("%"); }
                 }
 
-                // Hàng 2
+              
                 Row {
                     ColorButton { label: "7"; on_click => root.button_pressed("7"); }
                     ColorButton { label: "8"; on_click => root.button_pressed("8"); }
@@ -87,7 +87,7 @@ export component Calculator inherits Window {
                     ColorButton { label: "÷"; bg: #4caf50; fg: white; on_click => root.button_pressed("÷"); }
                 }
 
-                // Hàng 3
+                
                 Row {
                     ColorButton { label: "4"; on_click => root.button_pressed("4"); }
                     ColorButton { label: "5"; on_click => root.button_pressed("5"); }
@@ -95,15 +95,15 @@ export component Calculator inherits Window {
                     ColorButton { label: "×"; bg: #4caf50; fg: white; on_click => root.button_pressed("×"); }
                 }
 
-                // Hàng 4
+               
                 Row {
                     ColorButton { label: "1"; on_click => root.button_pressed("1"); }
                     ColorButton { label: "2"; on_click => root.button_pressed("2"); }
                     ColorButton { label: "3"; on_click => root.button_pressed("3"); }
-                    ColorButton { label: "−"; bg: #4caf50; fg: white; on_click => root.button_pressed("−"); }
+                    ColorButton { label: "-"; bg: #4caf50; fg: white; on_click => root.button_pressed("-"); }
                 }
 
-                // Hàng 5
+                
                 Row {
                     ColorButton { label: "0"; on_click => root.button_pressed("0"); }
                     ColorButton { label: "."; on_click => root.button_pressed("."); }

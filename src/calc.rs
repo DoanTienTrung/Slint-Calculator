@@ -28,7 +28,7 @@ impl CalculatorState {
     }
   }
   // nhap so input
-  pub fn input_digital(&mut self, d: char) {
+  pub fn input_digital(&mut self, d: char) {  //&mut self cho phep sua self
      if self.error {
       *self = CalculatorState::new(); // neu dang loi, reset ve trang thai ban dau truoc khi nhap so moi
      }
@@ -45,9 +45,9 @@ impl CalculatorState {
       return;
     }
     // neu nguoi dung vua nhap so, luu lai so do vao stored
-    if let Ok(value) = self.current.parse::<f64>() {
-      self.stored = value;
-      self.current = "0".to_string();
+    if let Ok(value) = self.current.parse::<f64>() {  // parse f64 chuyen chuoi so "12.3" sang so thuc 12.3
+      self.stored = value;  // neu ma chuyen doi so Ok thi luu vao stored
+      self.current = "0".to_string(); // reser current de nhap so tiep theo
       self.op = Some(op);
     }
   }
@@ -75,9 +75,9 @@ impl CalculatorState {
         };
 
         if !self.error {
-          self.current = result.to_string();
-          self.stored = result;
-          self.last_operand = Some(rhs);
+          self.current = result.to_string(); // hien thi ket qua ra man hinh
+          self.stored = result; // luu ket qua de thuc hien phep tinh tiep theo
+          self.last_operand = Some(rhs); // lưu giá trị rhs để có thể lặp phép tính
         } else {
           self.current = "Error".to_string();
         }
@@ -126,7 +126,7 @@ impl CalculatorState {
       if self.error {
         return;
       }
-      if let Ok(value) = self.current.parse::<f64>() {
+      if let Ok(value) = self.current.parse::<f64>() { // chuyen sang so thuc
         let result = value / 100.0;
         self.current = result.to_string();
       }
@@ -136,6 +136,7 @@ impl CalculatorState {
 
 }
 
+// test nhap so
 #[cfg(test)]
 mod tests {
     use super::*;
